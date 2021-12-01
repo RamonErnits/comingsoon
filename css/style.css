@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    color: white;
+    background: black;
+}
+
+.container{
+    background-image: url('../img/pilt1.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: left;
+}
+
+.inner-container{
+    position: relative;
+    height: 100%;
+    padding: 15rem;
+    width: 100%;
+    text-align: left;
+}
+
+.inner-container h1{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 5rem;
+}
+
+.countdown{
+    font-size: 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.countdown div{
+    padding: 0.6rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0.3rem;
+    background-color: rgba(192, 25, 3, 0.671);
+}
+
+@media (max-width: 568px){
+    .inner-container{
+        font-size: 3rem;
+    }
+
+    .countdown{
+        flex-direction: column;
+    }
+}
